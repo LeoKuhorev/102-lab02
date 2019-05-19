@@ -17,8 +17,12 @@ if (hourNow > 18) {
 var userName = prompt(greeting + ", what's your name?");
 //console.log(userName);
 
-if (userName === 'Leo' || userName === 'LEO' || userName === 'leo') {
-    document.write('<h1>' + userName + ', you are so cool!</h1>');
+var likeCats = prompt('Nice to meet you, ' + userName + '! Do you like cats?');
+
+if (likeCats === 'Yes' || likeCats === 'yes' || likeCats === 'YES') {
+    document.write('<h2> This is cool, '+ userName + ', cats are cool!</h2>') 
+} else if (likeCats === 'No' || likeCats === 'no' || likeCats === 'NO') {
+    document.write('<h2> Oh, no, '+ userName + ', this page is full of cats</h2>')
 } else {
-    document.write('<h1>' + userName + ', you are such a loser!</h1>');
+    document.write('<h2> I am sorry, '+ userName + ', I did not quite understand your answer</h2>')
 }
