@@ -4,7 +4,7 @@
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
-var names = [];
+var names = [0];
 var answer;
 //console.log(hourNow);
 
@@ -44,7 +44,7 @@ if (yesNo === 'yes') {
   //    console.log(howManyInteger);
   // ask if user wants to give names
   var namesYesNo = userInput('Do you want to give names to all your ' + howManyInteger + ' cat(s)?', 'Yes');
-  if (namesYesNo === 'yes') { 
+  if (namesYesNo === 'yes') {
     document.write ('<h4> Here are your ' + howManyInteger + ' kitten(s), ' + userName + '</h4>');
     for (var i = 1; i < howManyInteger + 1; i++) {
       names.push(prompt('What\'s the name of your ' + i + ' cat?'));
@@ -57,15 +57,15 @@ if (yesNo === 'yes') {
     document.write ('<h4> Here are your ' + howManyInteger + ' kitten(s), ' + userName + '</h4>');
     for (i = 1; i < howManyInteger + 1; i++) {
       drawKitten();
-    } 
+    }
   } else {
     document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer for this question. Here are your ' + howManyInteger + ' kitten(s) anyways </h4>');
     for (i = 1; i < howManyInteger + 1; i++) {
       drawKitten();
-    } 
+    }
   }
 } else if (yesNo === 'no') {
-  document.write ('<h4>Oh, this is sad, ' + userName + ', but there are some kittens below anyways :-) </h4>');        
+  document.write ('<h4>Oh, this is sad, ' + userName + ', but there are some kittens below anyways :-) </h4>');
 // } else {
 //   document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer. Please refresh the page and try one more time using only "yes" and "no" answers</h4>');
- }
+}
