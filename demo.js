@@ -68,4 +68,4 @@ if (yesNo === 'yes') {
   document.write ('<h4>Oh, this is sad, ' + userName + ', but there are some kittens below anyways :-) </h4>');        
 // } else {
 //   document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer. Please refresh the page and try one more time using only "yes" and "no" answers</h4>');
-// }
+ }
