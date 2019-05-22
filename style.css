@@ -32,9 +32,17 @@ header h4{
     color: coral;
 }
 
+#number{
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 header p{
     color: black;
     font-style: oblique;
+    font-weight: bold;
     margin-top: 0;
 }
 

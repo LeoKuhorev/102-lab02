@@ -32,22 +32,23 @@ if (yesNo === 'Yes' || yesNo === 'yes' || yesNo === 'YES') {
   var howManyInteger = parseInt (howMany);
   //    console.log(howManyInteger);
   // ask if user wants to give names
-  var namesYesNo = prompt('Do you want to give names to all your ' + howManyInteger + ' cats?');
+  var namesYesNo = prompt('Do you want to give names to all your ' + howManyInteger + ' cat(s)?');
   if (namesYesNo === 'Yes' || namesYesNo === 'yes' || namesYesNo === 'YES') { 
-    document.write ('<h4> Here are your ' + howManyInteger + ' kittens, ' + userName + '</h4>');
+    document.write ('<h4> Here are your ' + howManyInteger + ' kitten(s), ' + userName + '</h4>');
     for (var i = 1; i < howManyInteger + 1; i++) {
       names.push(prompt('What\'s the name of your ' + i + ' cat?'));
+      document.write ('<p id="number">cat number ' + i + '</p>');
       drawKitten();
       document.write ('<p>' + names[i] + '</p>');
     //  console.log(names[i]);
     }
   } else if  (namesYesNo === 'No' || namesYesNo === 'no' || namesYesNo === 'NO') {
-    document.write ('<h4> Here are your ' + howManyInteger + ' kittens, ' + userName + '</h4>');
+    document.write ('<h4> Here are your ' + howManyInteger + ' kitten(s), ' + userName + '</h4>');
     for (i = 1; i < howManyInteger + 1; i++) {
       drawKitten();
     } 
   } else {
-    document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer for this question. Here are your ' + howManyInteger + ' kittens anyways </h4>');
+    document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer for this question. Here are your ' + howManyInteger + ' kitten(s) anyways </h4>');
     for (i = 1; i < howManyInteger + 1; i++) {
       drawKitten();
     } 
