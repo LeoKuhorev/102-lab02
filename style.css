@@ -22,6 +22,21 @@ header {
     padding-top: 5%;
     font-size: 20pt;
 }
+header img{
+    border-radius: 50px;
+    padding-right: 1%;
+    padding-bottom: 0;
+    margin-block-end: 0;    
+}
+header h4{
+    color: coral;
+}
+
+header p{
+    color: black;
+    font-style: oblique;
+    margin-top: 0;
+}
 
 nav {
     text-align: center;
@@ -33,7 +48,15 @@ nav li {
     list-style: none;
 }
 nav a{
-    color: #C8D3FF;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #B8C0FF;
+}
+a:active { 
+    background-color: #B8C0FF;
 }
 h2{
     font-size: 28pt;
