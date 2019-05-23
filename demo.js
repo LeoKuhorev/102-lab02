@@ -41,6 +41,10 @@ var yesNo = userInput('Nice to meet you, ' + userName + '! Do you want to see a 
 if (yesNo === 'yes') {
   var howMany = prompt('Awesome, ' + userName + ', how many cats do you want?');
   var howManyInteger = parseInt (howMany);
+  while (Number.isInteger(howManyInteger) !== true) {
+    howMany = prompt('Sorry, it should be a number, please try again');
+    howManyInteger = parseInt (howMany);
+  }
   //    console.log(howManyInteger);
   // ask if user wants to give names
   var namesYesNo = userInput('Do you want to give names to all your ' + howManyInteger + ' cat(s)?', 'Yes');
@@ -66,6 +70,4 @@ if (yesNo === 'yes') {
   }
 } else if (yesNo === 'no') {
   document.write ('<h4>Oh, this is sad, ' + userName + ', but there are some kittens below anyways :-) </h4>');
-// } else {
-//   document.write ('<h4>I\'m sorry, ' + userName + ', I didn\'t quite get your answer. Please refresh the page and try one more time using only "yes" and "no" answers</h4>');
 }
